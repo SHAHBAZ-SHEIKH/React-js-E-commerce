@@ -157,7 +157,9 @@ function Navbar() {
                                     {
                                         user ?<a onClick={logOut} className="text-sm font-medium text-gray-700 cursor-pointer  " style={{ color: mode === 'dark' ? 'white' : '', }}>
                                         Logout
-                                    </a>:""
+                                    </a>:<a onClick={logOut} className="text-sm font-medium text-gray-700 cursor-pointer  " style={{ color: mode === 'dark' ? 'white' : '', }}>
+                                        Logout
+                                    </a>
                                     }
                                 </div>
 
