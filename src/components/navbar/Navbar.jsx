@@ -20,7 +20,7 @@ function Navbar() {
 
     const user = JSON.parse(localStorage.getItem("user"))
     console.log(user)
-    console.log(user.email,user.uid)
+    console.log(user?.email,user?.uid)
 
     const logOut = () => {
         localStorage.clear("user")
@@ -157,7 +157,9 @@ function Navbar() {
                                     {
                                         user ?<a onClick={logOut} className="text-sm font-medium text-gray-700 cursor-pointer  " style={{ color: mode === 'dark' ? 'white' : '', }}>
                                         Logout
-                                    </a>:""
+                                    </a>:<a onClick={logOut} className="text-sm font-medium text-gray-700 cursor-pointer  " style={{ color: mode === 'dark' ? 'white' : '', }}>
+                                        Logout
+                                    </a>
                                     }
                                 </div>
 
