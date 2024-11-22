@@ -75,7 +75,7 @@ export const procetedRouter = ({ children }) => {
 export const procetedRouterAdmin = ({ children }) => {
   const admin = JSON.parse(localStorage.getItem('user'))
   console.log(admin)
-  if (admin.email = "ashabaz845@gmail.com") {
+  if (admin.email === "ashabaz845@gmail.com") {
     return children
   }
   else {
